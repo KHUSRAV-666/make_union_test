@@ -1,0 +1,60 @@
+main h1 {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  text-align: center;
+}
+@media only screen and (max-width: 768px) {
+  main h1 {
+    font-size: 1.5rem;
+  }
+}
+
+main a {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 7px 12px;
+  background: #fff7f7;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  height: 50px;
+}
+
+main a:hover {
+  text-decoration: underline;
+}
+
+main .user {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  font-size: 1.5rem;
+}
+@media only screen and (max-width: 768px) {
+  main .user {
+    font-size: 1rem;
+  }
+  main .user h3,
+  main .user p {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+main .user i {
+  display: inline-block;
+  font-weight: 300;
+  font-size: 1rem;
+  color: gray;
+  width: 150px;
+}
+@media only screen and (max-width: 768px) {
+  main .user i {
+    font-size: 0.8rem;
+  }
+}
+
+main .user-email {
+  color: rgb(0, 89, 255);
+}
