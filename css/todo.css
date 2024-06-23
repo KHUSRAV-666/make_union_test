@@ -1,0 +1,159 @@
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  text-align: center;
+}
+@media only screen and (max-width: 768px) {
+  main h1 {
+    font-size: 1.5rem;
+  }
+}
+
+form {
+  position: relative;
+  display: grid;
+  grid-template-columns: 4fr 2fr;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 50px;
+}
+@media only screen and (max-width: 600px) {
+  form {
+    grid-template-columns: 1fr;
+  }
+}
+
+.input,
+.btn {
+  padding: 0.5rem;
+  font-size: 1rem;
+  border-radius: 8px;
+  height: 100%;
+}
+@media only screen and (max-width: 600px) {
+  .btn {
+    height: 50px;
+    background: green;
+    color: white;
+  }
+}
+
+form .input {
+  position: relative;
+  background: #fff7f7;
+  min-width: 250px;
+  border: 4px solid #3a3f58;
+  height: 50px;
+}
+
+form .input:focus {
+  outline: none;
+  border: 4px solid #ee6a59;
+}
+
+form .btn {
+  color: green;
+  background: #fff7f7;
+  border: 4px solid green;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: 700;
+}
+
+form button:hover {
+  background: green;
+  color: white;
+}
+
+form .error {
+  display: none;
+  padding: 0 0.5rem;
+  color: red;
+}
+form .show-error {
+  display: block;
+}
+
+.todo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.todo-list {
+  width: 100%;
+}
+
+.todo {
+  background: #fff7f7;
+  color: black;
+  font-size: 1.2rem;
+  display: grid;
+  grid-template-columns: 4fr 1fr 1fr;
+  align-items: center;
+  transition: all 0.5s ease;
+  height: 50px;
+  margin-bottom: 12px;
+  border-radius: 8px;
+  box-shadow: 0px 0px 5px #000;
+}
+@media only screen and (max-width: 600px) {
+  .todo {
+    grid-template-columns: 1fr 1fr;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    margin-bottom: 70px;
+  }
+}
+
+.todo li {
+  flex: 1;
+  list-style: none;
+}
+@media only screen and (max-width: 600px) {
+  .todo li {
+    grid-column: 1/3;
+    height: 50px;
+    display: flex;
+    align-items: center;
+  }
+}
+
+.trash-btn,
+.complete-btn {
+  color: white;
+  border: none;
+  padding: 1rem;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.trash-btn {
+  background: red;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+@media only screen and (max-width: 600px) {
+  .trash-btn {
+    border-top-right-radius: 0;
+  }
+}
+
+.complete-btn {
+  background: green;
+}
+@media only screen and (max-width: 600px) {
+  .complete-btn {
+    border-bottom-left-radius: 8px;
+  }
+}
+
+.todo-item {
+  padding: 0rem 0.5rem;
+  min-width: 250px;
+}
+
+.completed {
+  text-decoration: line-through;
+  opacity: 0.5;
+}

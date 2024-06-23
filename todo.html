@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/todo.css" />
+    <title>To Do List</title>
+  </head>
+  <body>
+    <header>
+      <div class="header__content container">
+        <a href="./index.html" class="logo">LOGO</a>
+        <nav>
+          <a href="./todo.html">Todo</a>
+          <a href="./users.html">Пользователи</a>
+        </nav>
+      </div>
+    </header>
+    <main class="container">
+      <h1>Todo List</h1>
+      <form action="">
+        <input type="text" class="input" placeholder="Название задачи" />
+        <button class="btn" type="submit">Добавить</button>
+        <p class="error">
+          Значение поля "Название задачи" не может быть пустым
+        </p>
+      </form>
+
+      <div class="todo-container">
+        <ol class="todo-list"></ol>
+      </div>
+    </main>
+    <script src="./js/main.js"></script>
+  </body>
+</html>
